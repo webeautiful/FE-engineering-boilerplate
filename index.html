@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>highcharts图表</title>
+<meta charset='utf-8' />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script data-main="main" src="bower_components/requirejs/require.js"></script>
+</head>
+<body>
+    <div id="container" style="width: 600px; height: 250px; margin: 0 auto"></div>
+</body>
+<script>
+require(['src/general_drawing'], function(drawing){
+    //该回调函数的参数为工厂方法的return值
+    drawing.initialize();
+});
+</script>
+</html>

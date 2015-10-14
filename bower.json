@@ -1,0 +1,26 @@
+{
+  "name": "bi",
+  "version": "0.0.1",
+  "authors": [
+    "xiongfuosng"
+  ],
+  "description": "Data visualization",
+  "keywords": [
+    "BI",
+    "visusalization"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15",
+    "jquery": "1.11.0",
+    "highcharts": "git@github.com:highslide-software/highcharts-release.git"
+  }
+}
