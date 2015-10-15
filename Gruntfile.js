@@ -27,6 +27,7 @@ module.exports = function (grunt) {
                     "* http://conversejs.org \n"+
                     "* Copyright (c) 2015, Webeautiful <xiongfusong@gmail.com> \n"+
                     "* Dual licensed under the MIT and GPL Licenses \n"+
+                    "* Date:<%= grunt.template.today('yyyy-mm-dd') %> \n"+
                     "*/"
         },
         minify: {
