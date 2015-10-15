@@ -1,3 +1,6 @@
+/*
+ * 工程主配置文件
+ */
 if(!require){
     require = null;
 }
