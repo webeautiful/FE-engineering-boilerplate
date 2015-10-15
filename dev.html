@@ -7,14 +7,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="bower_components/h5bp/dist/css/normalize.css">
 <link rel="stylesheet" href="bower_components/h5bp/dist/css/main.css">
-<link rel="stylesheet" href="res/main.css">
+<link rel="stylesheet" href="src/css/main.css">
 <script data-main="main" src="bower_components/requirejs/require.js"></script>
 </head>
 <body>
     <div id="container"></div>
 </body>
 <script>
-require(['src/general_drawing'], function(drawing){
+require(['src/js/general_drawing'], function(drawing){
     //入参为主模块general_drawing.js的return值
     drawing.initialize();
 });

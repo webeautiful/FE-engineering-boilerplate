@@ -10,14 +10,14 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: ['src/deps-drawing.js', 'src/general_drawing.js'],
-        dest: 'dest/libs.js'
+        src: ['src/js/deps-drawing.js', 'src/js/general_drawing.js'],
+        dest: 'dest/js/libs.js'
       }
     },
     uglify: {
       build: {
-        src: 'dest/libs.js',
-        dest: 'dest/libs.min.js'
+        src: 'dest/js/libs.js',
+        dest: 'dest/js/libs.min.js'
       }
     },
     cssmin: {
@@ -31,8 +31,8 @@ module.exports = function (grunt) {
                     "*/"
         },
         minify: {
-            dest: 'res/main.min.css',
-            src: ['bower_components/h5bp/dist/css/normalize.css', 'bower_components/h5bp/dist/css/main.css', 'res/main.css']
+            src: ['bower_components/h5bp/dist/css/normalize.css', 'bower_components/h5bp/dist/css/main.css', 'src/css/main.css'],
+            dest: 'dest/css/main.min.css'
         }
     },
   });

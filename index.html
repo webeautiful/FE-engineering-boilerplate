@@ -5,14 +5,14 @@
 <meta charset='utf-8' />
 <meta http-equiv="X-UA-Compatible" content="chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="res/main.min.css">
+<link rel="stylesheet" href="dest/css/main.min.css">
 <script data-main="main" src="bower_components/requirejs/require.js"></script>
 </head>
 <body>
     <div id="container"></div>
 </body>
 <script>
-require(['src/general_drawing'], function(drawing){
+require(['src/js/general_drawing'], function(drawing){
     //入参为主模块general_drawing.js的return值
     drawing.initialize();
 });

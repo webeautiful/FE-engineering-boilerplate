@@ -7,11 +7,10 @@ if(!require){
 require.config({
     paths: {
         "jquery": "bower_components/jquery/dist/jquery",
-        "jquery-private": "src/jquery-private",
-        "highcharts": "bower_components/highcharts/highcharts.src",
+        "highcharts": "bower_components/highcharts/highcharts",
         "highcharts.exporting": "bower_components/highcharts/modules/exporting",
 
-        "drawing-deps": "src/deps-drawing"
+        "drawing-deps": "src/js/deps-drawing"
     },
     shim: {
         "highcharts.exporting": {deps: ["highcharts"]}
