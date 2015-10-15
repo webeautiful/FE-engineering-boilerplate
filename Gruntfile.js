@@ -19,10 +19,25 @@ module.exports = function (grunt) {
         src: 'dest/libs.js',
         dest: 'dest/libs.min.js'
       }
-    }
+    },
+    cssmin: {
+        options: {
+            banner: "/*"+
+                    "* FE-engineering-boilerplate \n"+
+                    "* http://conversejs.org \n"+
+                    "* Copyright (c) 2015, Webeautiful <xiongfusong@gmail.com> \n"+
+                    "* Dual licensed under the MIT and GPL Licenses \n"+
+                    "*/"
+        },
+        minify: {
+            dest: 'res/main.min.css',
+            src: ['bower_components/h5bp/dist/css/normalize.css', 'bower_components/h5bp/dist/css/main.css', 'res/main.css']
+        }
+    },
   });
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   // 默认任务
-  grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin']);
 }

@@ -21,6 +21,7 @@
   "dependencies": {
     "requirejs": "~2.1.15",
     "jquery": "1.11.0",
-    "highcharts": "git@github.com:highslide-software/highcharts-release.git"
+    "highcharts": "git@github.com:highslide-software/highcharts-release.git",
+    "h5bp": "git@github.com:h5bp/html5-boilerplate.git"
   }
 }
