@@ -13,6 +13,7 @@ require.config({
         "drawing-deps": "src/js/deps-drawing"
     },
     shim: {
+        "highcharts": {deps: ['jquery']},
         "highcharts.exporting": {deps: ["highcharts"]}
     }
 });
